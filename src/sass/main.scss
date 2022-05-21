@@ -5,3 +5,8 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
