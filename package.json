@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://IvetaDuda.github.io/pugination-test",
+  "homepage": "https://Maksimchik36.github.io/pagination-test",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /pugination-test/"
+    "build": "parcel build src/*.html --public-url /pagination-test/"
   },
   "repository": {
     "type": "git",
