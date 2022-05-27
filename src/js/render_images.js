@@ -1,5 +1,5 @@
 
-
+// Рисует текстовую разметку для картинок
 export default function renderGallery(images) {
   return images
     .map(image => {

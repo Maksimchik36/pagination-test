@@ -2,7 +2,7 @@ import './sass/main.scss';
 import Pagination from 'tui-pagination';
 import 'tui-pagination/dist/tui-pagination.css';
 import apiService from "./js/api";
-import renderGallery from './js/rander_images'
+import renderGallery from './js/render_images'
 
 const galleryEl = document.querySelector('.gallery');
 const formEl = document.querySelector('.search-form');
@@ -22,7 +22,7 @@ apiService.itemsPerPage = options.itemsPerPage;
 
 
 const pagination = new Pagination('pagination', options);
-console.dir(pagination);
+// console.dir(pagination);
 
 const page = pagination.getCurrentPage();
 
