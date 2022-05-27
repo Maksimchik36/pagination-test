@@ -28,16 +28,16 @@ const page = pagination.getCurrentPage();
 
 
 apiService.fetchPopularImages(page).then(({ images, total }) => {
-   const murkup = renderGallery(images);
-    galleryEl.insertAdjacentHTML('beforeend', murkup);
+   const markup = renderGallery(images);
+    galleryEl.insertAdjacentHTML('beforeend', markup);
   pagination.reset(total);
 });
 
 function popular(event) {
   const currentPage = event.page;
   apiService.fetchPopularImages(currentPage).then(({ images, total }) => {
-    const murkup = renderGallery(images);
-    galleryEl.insertAdjacentHTML('beforeend', murkup);
+    const markup = renderGallery(images);
+    galleryEl.insertAdjacentHTML('beforeend', markup);
   });
 }
 
@@ -57,8 +57,8 @@ function onFormSubmit(event) {
   apiService.searchQuery = event.currentTarget.elements.searchQuery.value;
   
   apiService.fetchImagesByName(page).then(({ images, total }) => {
-   const murkup = renderGallery(images);
-    galleryEl.insertAdjacentHTML('beforeend', murkup);
+   const markup = renderGallery(images);
+    galleryEl.insertAdjacentHTML('beforeend', markup);
     pagination.reset(total);
   });
 }
@@ -66,7 +66,7 @@ function onFormSubmit(event) {
 function bySearch(event) {
   const currentPage = event.page;
   apiService.fetchImagesByName(currentPage).then(({ images }) => {
-     const murkup = renderGallery(images);
-    galleryEl.insertAdjacentHTML('beforeend', murkup);
+     const markup = renderGallery(images);
+    galleryEl.insertAdjacentHTML('beforeend', markup);
   });
 }
