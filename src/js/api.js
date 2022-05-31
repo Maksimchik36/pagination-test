@@ -8,9 +8,9 @@ export default {
  itemsPerPage: 0, 
   searchQuery: '',
     
-  // create object hits, totalhits, total
+  // Открывает партию картинок после клика по кнопке с номером страницы. create object hits, totalhits, total
 fetchPopularImages(page) {
-  console.log(page);
+  // console.log(page);
   return fetch(
     `${BASE_URL}?key=${KEY}&q=${this.searchQuery}&image_type=photo&page=${page}&per_page=${this.itemsPerPage}`,
   )

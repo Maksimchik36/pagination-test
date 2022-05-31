@@ -9,6 +9,7 @@ const formEl = document.querySelector('.search-form');
 
 let searchQuery = '';
 
+// options for pagination
 const options = {
   totalItems: 0,
   itemsPerPage: 3,
